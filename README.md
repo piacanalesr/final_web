@@ -7,7 +7,7 @@ Exponer mis proyectos de diseño de forma visual e interactiva, generando una ex
 
 ### Usuario extremo 1: El reclutador profesional 
 
-| *Nombre y sketch*          | *Comportamientos y creencias*|
+| *Nombre y sketch*        | *Comportamientos y creencias*|
 | :---------------------------- | :-------------------------- |
 | Reclutador profesional: Representa a quien busca talento para contratar. Observa mi portafolio desde una mirada técnica y estratégica.     | Navega rápido, comparando varios portafolios a la vez. Se enfoca en consistencia visual y organización de contenido. El diseño debe comunicar claridad. |
 |*Demografía*        | *Necesidades y metas*|
@@ -15,7 +15,7 @@ Exponer mis proyectos de diseño de forma visual e interactiva, generando una ex
 
 ### Usuario extremo 2: Mente creativa en movimiento 
 
-| *Nombre y sketch*  | *Comportamientos y creencias*|
+| *Nombre y sketch*        | *Comportamientos y creencias*|
 | :---------------------------- | :-------------------------- |
 | Representa a profesionales del diseño que trabajan en industrias altamente dinámicas como packaging, branding, K-pop, juguetes o visualización de datos, donde confluyen la estética, los medios digitales y la innovación visual. | Cree que el diseño debe ir reinventándose, dialogar con tendencias culturales y que es una herramienta para traducir ideas en experiencias visuales tecnológicas.|
 | *Demografía*        | *Necesidades y metas*|
