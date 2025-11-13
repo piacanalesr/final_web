@@ -13,6 +13,8 @@ Exponer mis proyectos de diseño de forma visual e interactiva, generando una ex
 |*Demografía*        | *Necesidades y metas*|
 | Persona adulta, con experiencia laboral en diseño o comunicación digital, ubicada en un entorno profesional.      | Quiere identificar mi estilo, competencias y forma de pensar el diseño. Evalúa si el trabajo demuestra compromiso, criterio y originalidad. Desea reconocer mi potencial como futura colaboradora. |    
 
+___
+
 ### Usuario extremo 2: Mente creativa en movimiento 
 
 | *Nombre y sketch*        | *Comportamientos y creencias*|
@@ -21,6 +23,8 @@ Exponer mis proyectos de diseño de forma visual e interactiva, generando una ex
 | *Demografía*        | *Necesidades y metas*|
 | Persona creativa, japonés o coreano de un entorno competitivo, que trabaja en equipos interdisciplinarios de diseño gráfico, industrial o comunicación visual. | Encontrar inspiración y nuevas aproximaciones visuales. Percibir una propuesta fresca, adaptable y visualmente sólida. Descubrir propuestas visuales que conecten creatividad y tecnología. |
 
+___
+
   ### Usuario Promedio: Navegante creativo 
 
 | *Nombre y sketch*        | *Comportamientos y creencias*|
@@ -28,3 +32,44 @@ Exponer mis proyectos de diseño de forma visual e interactiva, generando una ex
 | Representa a personas curiosas e interesadas en el diseño visual, digital o artístico que llegan a mi portafolio buscando inspiración o referencias. | Navega portafolios para inspirarse visualmente o descubrir nuevas estéticas. Creen que el diseño comunica identidad y experimentación. |
 | *Demografía*        | *Necesidades y metas*|
 | Personas jóvenes o adultas, vinculadas a disciplinas creativas como diseño, música, juegos, tecnología, que exploran contenido en internet y redes. | Quieren inspirarse con mi lenguaje visual, composición y uso de medios digitales. Reconocer en mi portafolio una voz creativa auténtica y estimulante. |
+
+___
+
+### Antecedentes 
+
+### 1. milyukhina for president
+| *¿Qué es?*      | ...|
+| :---------------------------- | :-------------------------- |
+| *Fuente* | https://alisamilyukhina.com |
+
+### 2. Yifei Luo
+| *¿Qué es?*      | ...|
+| :---------------------------- | :-------------------------- |
+| *Fuente* | https://luoooif.com/works |
+
+### 3. (RE)FOAM
+| *¿Qué es?*      | ...|
+| :---------------------------- | :-------------------------- |
+| *Fuente* |  https://re-foam.ru|
+
+### 4. souajoana
+| *¿Qué es?*      | ...|
+| :---------------------------- | :-------------------------- |
+| *Fuente* |  https://souajoana.com|
+
+### 5. Anna Mills
+| *¿Qué es?*      | ...|
+| :---------------------------- | :-------------------------- |
+| *Fuente* |  https://annamills.xyz|
+
+
+### 6. Daria Stolyarova - film photographer 
+| *¿Qué es?*      | ...|
+| :---------------------------- | :-------------------------- |
+| *Fuente* |  https://daria-stolyarova.com|
+
+
+
+
+
+
