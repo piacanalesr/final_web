@@ -79,7 +79,7 @@ ___
     </td>
     <td valign="top" width="33%">
       <b>¿Qué es?</b><br> Página de productos de Re-Foam. Diseño moderno e interactivo. Hay transiciones suaves, bloques de contenido que aparecen por secciones y una composición que mezcla tipografía llamativa con fotografías de sus productos.<br>
-      <b>Fuente:</b> <a href="https://luoooif.com">Luoooif</a><br>
+      <b>Fuente:</b> <a href="https://re-foam.ru">Re-Foam</a><br>
       <b>✅:</b> La interacción principal del scroll para general una línea de tiempo visual en el centro de la página es muy llamativa, ya que señala la sección de la página donde te encuentras y guía la exploración de los productos de forma dinámica. <br>
       <b>❌:</b> La paleta de colores es tan amplia que puede generar distracción ya que con tantos colores, es difícil saber dónde poner el foco visual y qué parte del contenido es más importante. Esta densidad visual puede afectar la legibilidad o la claridad.
     </td>
