@@ -50,7 +50,7 @@ ___
   <tr>
     <td valign="top" width="33%">
       <b>¿Qué es?</b><br> Portafolio digital que presenta una identidad visual muy personal y auténtica. Combina investigación histórica con una estética contemporánea, lo que resulta en un portafolio íntimo y reflexivo que transmite sus valores, su proceso creativo y su vínculo con la cultura visual. <br>
-      <b>Fuente:</b> <a href="/alisamilyukhina.com/">Alisa Milyukhina</a><br>
+      <b>Fuente:</b> <a href="https://alisamilyukhina.com">Alisa Milyukhina</a><br>
       <b>✅:</b> Desde el primer momento te permite conocer a la creadora ya que muestra su personalidad, sus intereses y su perspectiva como diseñadora. Eso crea una conexión más profunda con el visitante, porque no solo se ven sus proyectos, sino quién hay detrás.<br>
       <b>❌:</b> Para un usuario que está evaluando para contratar como un reclutador, es posible que no tenga tanto interés en conocer el perfil personal profundo. Probablemente quiera ver rápido los proyectos, la experiencia y resultados, y puede que se frene si la presentación es demasiado personal o lenta para ese fin.
     </td>
