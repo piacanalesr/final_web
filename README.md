@@ -1,9 +1,9 @@
 # final_web
 
-## Objetivo general 
+## OBJETIVO GENERAL 
 Exponer mis proyectos de diseño de forma visual e interactiva, generando una experiencia que refleje mi estilo personal. 
   
-## Protopersonas
+## PROTOPERSONAS
 
 ### Usuario extremo 1: El reclutador profesional 
 
@@ -35,40 +35,12 @@ ___
 
 ___
 
-### Antecedentes 
+### ANTECEDENTES 
 
 ### 1. milyukhina for president
-| *¿Qué es?*      | ...|
-| :---------------------------- | :-------------------------- |
-| *Fuente* | https://alisamilyukhina.com |
+## 📌 Antecedente
 
-### 2. Yifei Luo
-| *¿Qué es?*      | ...|
-| :---------------------------- | :-------------------------- |
-| *Fuente* | https://luoooif.com/works |
-
-### 3. (RE)FOAM
-| *¿Qué es?*      | ...|
-| :---------------------------- | :-------------------------- |
-| *Fuente* |  https://re-foam.ru|
-
-### 4. souajoana
-| *¿Qué es?*      | ...|
-| :---------------------------- | :-------------------------- |
-| *Fuente* |  https://souajoana.com|
-
-### 5. Anna Mills
-| *¿Qué es?*      | ...|
-| :---------------------------- | :-------------------------- |
-| *Fuente* |  https://annamills.xyz|
-
-
-### 6. Daria Stolyarova - film photographer 
-| *¿Qué es?*      | ...|
-| :---------------------------- | :-------------------------- |
-| *Fuente* |  https://daria-stolyarova.com|
-
-
+ 
 
 
 
