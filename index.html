@@ -4,9 +4,516 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sitio web en construcción</title>
-  </head>
-  <body>
-    <h1>Hola mundo!</h1>
-  </body>
+     <title>PORTA FOLIO - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+        }
+
+        /* Header */
+        .header {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* Receipt Section */
+        .receipt {
+            background: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px dashed #000;
+        }
+
+        .receipt-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .receipt-info {
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .receipt-section {
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .receipt-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 12px;
+        }
+
+        .receipt-total {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #000;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .receipt-footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        /* Shopping Basket */
+        .basket-container {
+            position: relative;
+        }
+
+        .basket {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            border: 3px solid #2d6b2f;
+            border-radius: 15px;
+            padding: 40px;
+            min-height: 600px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .basket::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,255,255,0.3) 20px, rgba(255,255,255,0.3) 22px),
+                repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(255,255,255,0.3) 20px, rgba(255,255,255,0.3) 22px);
+            pointer-events: none;
+            border-radius: 15px;
+        }
+
+        .basket-handle {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 30px;
+            background: #2d6b2f;
+            border-radius: 50px 50px 0 0;
+            border: 3px solid #2d6b2f;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            cursor: move;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            user-select: none;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px) rotate(2deg);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .project-card.dragging {
+            opacity: 0.5;
+            transform: rotate(5deg);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .project-description {
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+        }
+
+        .tag {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #8BC34A;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        .tag::after {
+            content: '★';
+            font-size: 24px;
+            display: block;
+            text-align: center;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .modal-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .receipt {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">PORTA<br>FOLIO</div>
+            <nav>
+                <a href="#pia">pía</a>
+                <a href="#works">works</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+
+        <!-- Receipt -->
+        <div class="receipt">
+            <div class="receipt-header">
+                <div class="receipt-title">HelloMe</div>
+                <div class="receipt-info">
+                    Dirección: Tu dirección<br>
+                    Tel: +56 9 XXXX XXXX<br>
+                    www.tuportfolio.com
+                </div>
+            </div>
+
+            <div class="receipt-section">
+                <div class="receipt-item">
+                    <span>ORDER#:</span>
+                    <span>203</span>
+                </div>
+                <div class="receipt-item">
+                    <span>DATE:</span>
+                    <span>21/11/2025</span>
+                </div>
+            </div>
+
+            <div class="receipt-section">
+                <div class="receipt-item">
+                    <span>84× Creative Direction</span>
+                    <span>A+</span>
+                </div>
+                <div class="receipt-item">
+                    <span>75× Art Direction</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>48× Design</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>36× Visual Identity/Branding</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>27× Campaign</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>18× Exhibition</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>34× Digital/Website</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>9× Interior</span>
+                    <span>A</span>
+                </div>
+                <div class="receipt-item">
+                    <span>28× Art Installation</span>
+                    <span>A</span>
+                </div>
+            </div>
+
+            <div class="receipt-total">
+                <div class="receipt-item">
+                    <span>TOTAL:</span>
+                    <span>A+</span>
+                </div>
+            </div>
+
+            <div class="receipt-footer">
+                ***DUPLICATE COPY***<br>
+                KEEP FOR YOUR RECORDS<br><br>
+                Gracias por visitar mi portfolio
+            </div>
+        </div>
+
+        <!-- Shopping Basket -->
+        <div class="basket-container">
+            <div class="basket">
+                <div class="basket-handle"></div>
+                <div class="tag"></div>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        // Project data
+        const projects = [
+            {
+                id: 1,
+                title: "Así llegamos",
+                description: "Campaign Design",
+                image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+                details: "Proyecto de campaña creativa con enfoque en diseño visual y narrativa impactante."
+            },
+            {
+                id: 2,
+                title: "Democrática",
+                description: "Visual Identity",
+                image: "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400",
+                details: "Desarrollo de identidad visual completa para marca comprometida con valores democráticos."
+            },
+            {
+                id: 3,
+                title: "Mid-Century",
+                description: "Interior Design",
+                image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+                details: "Proyecto de diseño interior con estética mid-century modern, fusionando funcionalidad y estilo."
+            },
+            {
+                id: 4,
+                title: "Urban Art",
+                description: "Art Installation",
+                image: "https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=400",
+                details: "Instalación artística urbana que transforma espacios públicos."
+            },
+            {
+                id: 5,
+                title: "Digital Flow",
+                description: "Website Design",
+                image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400",
+                details: "Diseño web innovador con experiencia de usuario fluida y moderna."
+            },
+            {
+                id: 6,
+                title: "Exhibition",
+                description: "Gallery Design",
+                image: "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=400",
+                details: "Diseño y curaduría de exposición contemporánea."
+            }
+        ];
+
+        // Generate project cards
+        const projectsGrid = document.getElementById('projectsGrid');
+        projects.forEach(project => {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.draggable = true;
+            card.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+                <div class="project-title">${project.title}</div>
+                <div class="project-description">${project.description}</div>
+            `;
+            
+            // Click to open modal
+            card.addEventListener('click', () => openModal(project));
+            
+            // Drag events
+            card.addEventListener('dragstart', handleDragStart);
+            card.addEventListener('dragend', handleDragEnd);
+            
+            projectsGrid.appendChild(card);
+        });
+
+        // Drag and drop functionality
+        let draggedElement = null;
+
+        function handleDragStart(e) {
+            draggedElement = this;
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+        }
+
+        function handleDragEnd(e) {
+            this.classList.remove('dragging');
+        }
+
+        projectsGrid.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            const afterElement = getDragAfterElement(projectsGrid, e.clientY);
+            const dragging = document.querySelector('.dragging');
+            if (afterElement == null) {
+                projectsGrid.appendChild(dragging);
+            } else {
+                projectsGrid.insertBefore(dragging, afterElement);
+            }
+        });
+
+        function getDragAfterElement(container, y) {
+            const draggableElements = [...container.querySelectorAll('.project-card:not(.dragging)')];
+            
+            return draggableElements.reduce((closest, child) => {
+                const box = child.getBoundingClientRect();
+                const offset = y - box.top - box.height / 2;
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child };
+                } else {
+                    return closest;
+                }
+            }, { offset: Number.NEGATIVE_INFINITY }).element;
+        }
+
+        // Modal functionality
+        function openModal(project) {
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modalBody');
+            
+            modalBody.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="modal-image">
+                <h2 style="margin-bottom: 10px;">${project.title}</h2>
+                <h3 style="color: #666; margin-bottom: 20px;">${project.description}</h3>
+                <p style="line-height: 1.6;">${project.details}</p>
+            `;
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        // Close modal on outside click
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
 </html>
