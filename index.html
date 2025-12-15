@@ -514,6 +514,418 @@
         .hidden {
             display: none;
         }
+
+        /* ========== RESPONSIVE STYLES ========== */
+
+        /* Tablet (768px - 1024px) */
+        @media (max-width: 1024px) {
+            nav {
+                padding: 16px 20px;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .nav-link {
+                padding: 10px 24px;
+                font-size: 16px;
+            }
+
+            .landing-page {
+                padding: 100px 30px 60px 30px;
+            }
+
+            .welcome-title {
+                margin-bottom: 50px;
+            }
+
+            .welcome-title img {
+                max-width: 600px;
+            }
+
+            .featured-projects {
+                gap: 40px;
+                padding-left: 40px;
+            }
+
+            .featured-card {
+                width: 180px;
+            }
+
+            .featured-card img {
+                height: 280px;
+            }
+
+            .featured-number {
+                font-size: 20px;
+            }
+
+            .see-more {
+                margin-left: 40px;
+                font-size: 20px;
+            }
+
+            /* Works Index */
+            .works-index {
+                gap: 20px;
+                padding: 15px 40px;
+                flex-wrap: wrap;
+            }
+
+            .index-item {
+                font-size: 14px;
+            }
+
+            /* Project Detail */
+            .project-header {
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+            }
+
+            .project-detail h1 {
+                font-size: 42px;
+                padding-left: 3vh;
+            }
+
+            .project-subtitle {
+                padding-left: 3vh;
+            }
+
+            .project-detail .description {
+                padding-left: 3vh;
+            }
+
+            /* About */
+            .about-page {
+                padding: 80px 60px;
+            }
+
+            .about-container {
+                grid-template-columns: 350px 1fr;
+                gap: 60px;
+            }
+
+            .about-content h1 {
+                font-size: 56px;
+            }
+
+            .skill-line {
+                width: 100px;
+            }
+
+            /* Nav arrows */
+            .nav-arrow {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+
+            .nav-arrow.left {
+                left: 20px;
+            }
+
+            .nav-arrow.right {
+                right: 20px;
+            }
+        }
+
+        /* Mobile (max-width: 768px) */
+        @media (max-width: 768px) {
+            nav {
+                padding: 12px 16px;
+            }
+
+            .logo img {
+                height: 35px;
+            }
+
+            .nav-links {
+                gap: 8px;
+            }
+
+            .nav-link {
+                padding: 8px 16px;
+                font-size: 14px;
+                border-radius: 30px;
+            }
+
+            .content {
+                padding-top: 15vh;
+            }
+
+            /* Landing Page */
+            .landing-page {
+                padding: 80px 20px 100px 20px;
+                min-height: auto;
+            }
+
+            .welcome-title {
+                margin-bottom: 30px;
+            }
+
+            .welcome-title img {
+                max-width: 100%;
+            }
+
+
+            .featured-projects {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                padding-left: 0;
+                padding-bottom: 60px;
+            }
+
+            .featured-card {
+                width: 200px;
+            }
+
+            .featured-card img {
+                height: 300px;
+            }
+
+            .featured-number {
+                font-size: 20px;
+            }
+
+            .see-more {
+                margin-left: 0;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+
+            .footer {
+                font-size: 14px;
+                padding: 15px;
+            }
+
+            /* Works Page */
+            .works-container {
+                padding-top: 40px;
+            }
+
+            .works-index {
+                top: 70px;
+                gap: 12px;
+                padding: 12px 16px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .index-item {
+                font-size: 12px;
+            }
+
+            .project-overlay h2 {
+                font-size: 20px;
+                white-space: normal;
+                padding: 0 20px;
+            }
+
+            .nav-arrow {
+                width: 44px;
+                height: 44px;
+                font-size: 20px;
+            }
+
+            .nav-arrow.left {
+                left: 10px;
+            }
+
+            .nav-arrow.right {
+                right: 10px;
+            }
+
+            /* Project Detail */
+            .project-detail {
+                width: 95%;
+                padding: 80px 0 48px 0;
+            }
+
+            .project-header {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .project-detail h1 {
+                font-size: 32px;
+                padding-left: 16px;
+            }
+
+            .project-subtitle {
+                font-size: 16px;
+                padding-left: 16px;
+                margin-bottom: 20px;
+            }
+
+            .project-detail .description {
+                font-size: 16px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .detail-image-intro {
+                height: 200px;
+                margin-top: 20px;
+            }
+
+            .detail-image-main {
+                margin-bottom: 20px;
+            }
+
+            /* About Page */
+            .about-page {
+                padding: 100px 20px 60px 20px;
+                min-height: auto;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-image-section {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .about-content h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+
+            .about-text {
+                font-size: 16px;
+            }
+
+            .skill-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                text-align: center;
+            }
+
+            .skill-name {
+                text-align: center;
+            }
+
+            .skill-line {
+                width: 100%;
+                max-width: 150px;
+                margin: 0 auto;
+            }
+
+            .skill-tools {
+                text-align: center;
+            }
+
+            /* Contact Page */
+            .contact-page {
+                padding: 100px 20px;
+            }
+
+            .contact-page h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .contact-info-simple {
+                font-size: 18px;
+            }
+        }
+
+        /* Small Mobile (max-width: 480px) */
+        @media (max-width: 480px) {
+            nav {
+                padding: 10px 12px;
+            }
+
+            .logo img {
+                height: 30px;
+            }
+
+            .nav-links {
+                gap: 6px;
+            }
+
+            .nav-link {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .content {
+                padding-top: 12vh;
+            }
+
+            .landing-page {
+                padding: 70px 16px 100px 16px;
+            }
+
+            .welcome-title {
+                margin-bottom: 20px;
+            }
+
+            .featured-card {
+                width: 160px;
+            }
+
+            .featured-card img {
+                height: 240px;
+            }
+
+            .works-index {
+                top: 60px;
+                gap: 8px;
+                padding: 10px 12px;
+            }
+
+            .index-item {
+                font-size: 10px;
+            }
+
+            .project-detail h1 {
+                font-size: 28px;
+            }
+
+            .project-subtitle {
+                font-size: 14px;
+            }
+
+            .project-detail .description {
+                font-size: 14px;
+            }
+
+            .about-content h1 {
+                font-size: 36px;
+            }
+
+            .about-text {
+                font-size: 14px;
+            }
+
+            .skill-name,
+            .skill-tools {
+                font-size: 14px;
+            }
+
+            .contact-page h1 {
+                font-size: 24px;
+            }
+
+            .contact-info-simple {
+                font-size: 16px;
+            }
+
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -536,6 +948,8 @@
             <div class="welcome-title">
                 <img src="img/welcome.png" alt="Welcome to my digital work">
             </div>
+
+
             
             <div class="featured-projects">
                 <div class="featured-card" onclick="showProject(0)">
@@ -548,8 +962,9 @@
                     <div class="featured-number">( 02 )</div>
                 </div>
                 
+                <!-- NUEVO PROYECTO - Posición 3 -->
                 <div class="featured-card" onclick="showProject(2)">
-                    <img src="img/kaizen1.png" alt="Kaizen">
+                    <img src="img/ikaikap.png" alt="Nuevo Proyecto">
                     <div class="featured-number">( 03 )</div>
                 </div>
                 
@@ -567,9 +982,9 @@
             <div class="works-scroll-container" id="works-scroll">
                 <div class="works-track">
                     <div class="project-item" onclick="showProject(0)">
-                        <img src="img/bookw.png" alt="Memorabilila">
+                        <img src="img/bookw.png" alt="Memorabilia">
                         <div class="project-overlay">
-                            <h2>Memorabilila - Editorial</h2>
+                            <h2>Memorabilia - Editorial</h2>
                         </div>
                     </div>
                     <div class="project-item" onclick="showProject(1)">
@@ -578,56 +993,64 @@
                             <h2>Ensayo General - Museografía MHN</h2>
                         </div>
                     </div>
+                    <!-- NUEVO PROYECTO - Posición 3 -->
                     <div class="project-item" onclick="showProject(2)">
+                        <img src="img/ikaikaw.png" alt="Nuevo Proyecto">
+                        <div class="project-overlay">
+                            <h2>IKA - IKA - Experiencia</h2>
+                        </div>
+                    </div>
+                    <div class="project-item" onclick="showProject(3)">
                         <img src="img/kaizenw.png" alt="Kaizen">
                         <div class="project-overlay">
                             <h2>Kaizen - Editorial</h2>
                         </div>
                     </div>
-                    <div class="project-item" onclick="showProject(3)">
+                    <div class="project-item" onclick="showProject(4)">
                         <img src="img/asiw.png" alt="Así llegamos">
                         <div class="project-overlay">
                             <h2>Así llegamos - Experiencia</h2>
                         </div>
                     </div>
-                    <div class="project-item" onclick="showProject(4)">
+                    <div class="project-item" onclick="showProject(5)">
                         <img src="img/shuw.png" alt="Shelf Units">
                         <div class="project-overlay">
                             <h2>Shelf Units - Industrial</h2>
                         </div>
                     </div>
-                    <div class="project-item" onclick="showProject(5)">
+                    <div class="project-item" onclick="showProject(6)">
                         <img src="img/primulaw.png" alt="Primula">
                         <div class="project-overlay">
                             <h2>Prímula - Branding y textil</h2>
                         </div>
                     </div>
-                    <div class="project-item" onclick="showProject(6)">
+                    <div class="project-item" onclick="showProject(7)">
                         <img src="img/marcianow.png" alt="Marcianos">
                         <div class="project-overlay">
                             <h2>Marcianos - Juego de mesa</h2>
                         </div>
                     </div>
-                    <div class="project-item" onclick="showProject(7)">
-                        <img src="img/otrosw.png" alt="Proyecto 8">
+                    <div class="project-item" onclick="showProject(8)">
+                        <img src="img/otrosw.png" alt="Proyecto 9">
                         <div class="project-overlay">
-                            <h2>Otros</h2>
+                            <h2>Infografías e ilustraciones</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Horizontal Index Navigation (fuera de page-works para ser visible en todas partes) -->
+        <!-- Horizontal Index Navigation -->
         <div class="works-index" id="works-index">
             <div class="index-item active" onclick="scrollToProject(0)">memorabilia</div>
             <div class="index-item" onclick="scrollToProject(1)">ensayo general</div>
-            <div class="index-item" onclick="scrollToProject(2)">kaizen</div>
-            <div class="index-item" onclick="scrollToProject(3)">así llegamos</div>
-            <div class="index-item" onclick="scrollToProject(4)">shelf units</div>
-            <div class="index-item" onclick="scrollToProject(5)">primula</div>
-            <div class="index-item" onclick="scrollToProject(6)">marcianos</div>
-            <div class="index-item" onclick="scrollToProject(7)">otros</div>
+            <div class="index-item" onclick="scrollToProject(2)">ika-ika</div>
+            <div class="index-item" onclick="scrollToProject(3)">kaizen</div>
+            <div class="index-item" onclick="scrollToProject(4)">así llegamos</div>
+            <div class="index-item" onclick="scrollToProject(5)">shelf units</div>
+            <div class="index-item" onclick="scrollToProject(6)">primula</div>
+            <div class="index-item" onclick="scrollToProject(7)">marcianos</div>
+            <div class="index-item" onclick="scrollToProject(8)">otros</div>
         </div>
 
         <!-- Project Detail Pages -->
@@ -655,7 +1078,20 @@
             <img src="img/mhng.png" alt="Ensayo General completo" class="detail-image-main">
         </div>
 
+        <!-- NUEVO PROYECTO - project-detail-2 (PARA RELLENAR) -->
         <div id="project-detail-2" class="project-detail hidden">
+            <div class="project-header">
+                <div class="project-text">
+                    <h1>IKA-IKA</h1>
+                    <p class="project-subtitle">2025-2 · Juego, experiencia y prototipo</p>
+                    <p class="description">Juego grupal que invita a niñas y niños a expresarse creativamente a través del humor y reconocimiento de su territorio local. Propone un espacio seguro donde puedan comunicar ideas y emociones con libertad, fortaleciendo su confianza y su participación genuina. <br> <br> Al jugar, moverse e imaginar en relación con su propio entorno, los estudiantes desarrollan un vínculo más cercano con su comunidad, aprendiendo desde la experiencia y el disfrute, en contraste con metodologías tradicionales menos motivadoras. </p>
+                </div>
+                <img src="img/ikaikap.png" alt="Nuevo proyecto intro" class="detail-image-intro">
+            </div>
+            <img src="img/ikaikag.png" alt="Nuevo proyecto completo" class="detail-image-main">
+        </div>
+
+        <div id="project-detail-3" class="project-detail hidden">
             <div class="project-header">
                 <div class="project-text">
                     <h1>Kaizen</h1>
@@ -667,7 +1103,7 @@
             <img src="img/kaizeng.png" alt="Kaizen completo" class="detail-image-main">
         </div>
 
-        <div id="project-detail-3" class="project-detail hidden">
+        <div id="project-detail-4" class="project-detail hidden">
             <div class="project-header">
                 <div class="project-text">
                     <h1>Así llegamos</h1>
@@ -681,7 +1117,7 @@ de desiciones pedagógicas. </p>
             <img src="img/asillg.png" alt="Así llegamos completo" class="detail-image-main">
         </div>
 
-        <div id="project-detail-4" class="project-detail hidden">
+        <div id="project-detail-5" class="project-detail hidden">
             <div class="project-header">
                 <div class="project-text">
                     <h1>Shelf Units</h1>
@@ -695,7 +1131,7 @@ de desiciones pedagógicas. </p>
             <img src="img/shelfg.png" alt="Shelf Units completo" class="detail-image-main">
         </div>
 
-        <div id="project-detail-5" class="project-detail hidden">
+        <div id="project-detail-6" class="project-detail hidden">
             <div class="project-header">
                 <div class="project-text">
                     <h1>Prímula</h1>
@@ -707,10 +1143,10 @@ de desiciones pedagógicas. </p>
             <img src="img/primulag.png" alt="Primula completo" class="detail-image-main">
         </div>
 
-        <div id="project-detail-6" class="project-detail hidden">
+        <div id="project-detail-7" class="project-detail hidden">
             <div class="project-header">
                 <div class="project-text">
-                    <h1>Marcianos</h1>
+                    <h1>Marcianos en apuros</h1>
                     <p class="project-subtitle">2025-1 · Diseño de juego </p>
                     <p class="description">Juego de mesa de tablero con cartas, con el objetivo de generar interacciones sociales e inmersión en su narrativa. <br> <br> La experiencia es de roles ocultos y juego asimétrico contra tablero, donde unos marcianos estrellaron su nave, por lo que deberán colaborar para repararla y devolverse a su planeta. Sin embargo, un tripulante no quiere irse ya que se enamoró de una humana, por lo que quieren sabotear la nave. </p>
                 </div>
@@ -719,7 +1155,7 @@ de desiciones pedagógicas. </p>
             <img src="img/marcianog.png" alt="Marcianos completo" class="detail-image-main">
         </div>
 
-        <div id="project-detail-7" class="project-detail hidden">
+        <div id="project-detail-8" class="project-detail hidden">
             <div class="project-header">
                 <div class="project-text">
                     <h1>Otros</h1>
@@ -743,7 +1179,7 @@ de desiciones pedagógicas. </p>
                     <h1>Hola!</h1>
                     
                     <div class="about-text">
-                        <p>Soy Pía Canales, tengo 21 años y soy estudiante de cuarto año de Diseño Integral en la Pontificia Universidad Católica de Chile.</p>
+                        <p>Soy Pía Canales, tengo 21 años y soy licenciada en Diseño Integral en la Pontificia Universidad Católica de Chile.</p>
                         
                         <p>Mi enfoque actual en el diseño es la visualización de información y diseño de experiencias, de manera que se construyan realidades más amigables y comprensibles para todos los seres.</p>
                         
@@ -795,16 +1231,17 @@ de desiciones pedagógicas. </p>
     </div>
 
     <script>
-        // Projects data
+        // Projects data - Ahora son 9 proyectos
         const projects = [
-            { name: 'Memorabilia', number: '(01)', img: 'img/bookp.png', fallback: 'img/book1.png', id: 0 },
-            { name: 'Ensayo General - MHN', number: '(02)', img: 'mhn1.png', fallback: 'img/mhn1.png', id: 1 },
-            { name: 'Kaizen', number: '(03)', img: 'kaizen1.png', fallback: 'img/kaizen1.png', id: 2 },
-            { name: 'Así llegamos', number: '(04)', img: 'Así llegamos1.png', fallback: 'img/asi1.png', id: 3 },
-            { name: 'Shelf Units', number: '(05)', img: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=300&h=400&fit=crop', fallback: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=300&h=400&fit=crop', id: 4 },
-            { name: 'Primula', number: '(06)', img: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=300&h=400&fit=crop', fallback: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=300&h=400&fit=crop', id: 5 },
-            { name: 'Marcianos', number: '(07)', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=400&fit=crop', fallback: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=400&fit=crop', id: 6 },
-            { name: 'Proyecto 8', number: '(08)', img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=400&fit=crop', fallback: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=400&fit=crop', id: 7 }
+            { name: 'Memorabilia', number: '(01)', id: 0 },
+            { name: 'Ensayo General - MHN', number: '(02)', id: 1 },
+            { name: 'Nuevo Proyecto', number: '(03)', id: 2 },
+            { name: 'Kaizen', number: '(04)', id: 3 },
+            { name: 'Así llegamos', number: '(05)', id: 4 },
+            { name: 'Shelf Units', number: '(06)', id: 5 },
+            { name: 'Primula', number: '(07)', id: 6 },
+            { name: 'Marcianos', number: '(08)', id: 7 },
+            { name: 'Otros', number: '(09)', id: 8 }
         ];
 
         let currentProjectIndex = 0;
@@ -879,12 +1316,12 @@ de desiciones pedagógicas. </p>
             const footer = document.getElementById('footer');
             const worksIndex = document.getElementById('works-index');
             
-            // Hide all pages and project details
+            // Hide all pages and project details (ahora son 9)
             document.getElementById('page-landing').classList.add('hidden');
             document.getElementById('page-works').classList.add('hidden');
             document.getElementById('page-about').classList.add('hidden');
             document.getElementById('page-contact').classList.add('hidden');
-            for (let i = 0; i < 8; i++) {
+            for (let i = 0; i < 9; i++) {
                 document.getElementById('project-detail-' + i).classList.add('hidden');
             }
 
@@ -936,8 +1373,8 @@ de desiciones pedagógicas. </p>
             document.getElementById('page-about').classList.add('hidden');
             document.getElementById('page-contact').classList.add('hidden');
             
-            // Hide all project details
-            for (let i = 0; i < 8; i++) {
+            // Hide all project details (ahora son 9)
+            for (let i = 0; i < 9; i++) {
                 document.getElementById('project-detail-' + i).classList.add('hidden');
             }
 
